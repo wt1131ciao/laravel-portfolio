@@ -106,3 +106,16 @@ docker compose exec app php artisan tinker
 | `web` | Nginx | 80 |
 | `db` | MySQL 8.0 | 3306 |
 | `redis` | Redis 6 | 6379 |
+
+
+
+# Stripe
+
+## 用意されているテストカード一覧
+https://docs.stripe.com/testing?locale=ja-JP
+
+| カード番号 | 数字 | 
+|---|---|
+|Visa	|4242424242424242 |
+|Visa (デビット)	|4000056655665556 |
+|Mastercard	|5555555555554444 |
