@@ -1,0 +1,30 @@
+.git
+.github
+.vscode
+.idea
+
+node_modules
+vendor
+
+# ローカルの composer install (dev込み) で生成されたキャッシュ。
+# --no-dev でビルドした vendor と食い違うため必ず除外し、ビルド時に再生成する
+bootstrap/cache/*.php
+
+.env
+.env.*
+!.env.example
+
+storage/logs/*.log
+storage/framework/cache/data/*
+storage/framework/sessions/*
+storage/framework/views/*
+database/database.sqlite
+
+tests
+docker-compose.yaml
+nginx
+web
+php.ini
+
+*.md
+!README.md
