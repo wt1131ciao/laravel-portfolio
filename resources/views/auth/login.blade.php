@@ -11,7 +11,7 @@
             <p class="font-medium text-amber-900">⚠️ デモ環境のご案内</p>
             <p>テストアカウント: <span class="font-mono">test@example.com / password</span></p>
             <p>Stripeのテストカード番号: <span class="font-mono">4242 4242 4242 4242</span></p>
-            <p>決済はStripeのテスト環境で行われます。実際のクレジットカード情報は入力しないでください。<br>※仮に入力しても決済は行われませんのでご安心ください。</p>
+            <p>決済はテスト環境で行われます。実際のクレジットカード情報は入力しないでください。<br>※仮に入力しても決済は行われませんのでご安心ください。</p>
         </div>
         <form method="POST" action="{{ route('login') }}" class="space-y-5">
             @csrf
