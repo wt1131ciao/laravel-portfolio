@@ -35,5 +35,12 @@ services:
     ports:
       - "3306:3306"
 
+  stripe:
+    image: stripe/stripe-cli
+    container_name: laravel_stripe
+    command: listen --api-key ${STRIPE_SECRET} --forward-to web:80/webhook/stripe
+    depends_on:
+      - web
+
 volumes:
   db_data:

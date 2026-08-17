@@ -111,6 +111,15 @@ docker compose exec app php artisan tinker
 
 # Stripe
 
+## stripeの起動
+`docker compose up` 時に `stripe` コンテナが自動的に `stripe listen` を起動し、Webhook (`/webhook/stripe`) へ転送します。手動でコマンドを実行する必要はありません。
+
+起動ログは以下で確認できます（`Your webhook signing secret is ...` が `.env` の `STRIPE_WEBHOOK_SECRET` と一致していることを確認してください）。
+
+```bash
+docker compose logs -f stripe
+```
+
 ## 用意されているテストカード一覧
 https://docs.stripe.com/testing?locale=ja-JP
 
