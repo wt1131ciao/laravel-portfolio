@@ -58,7 +58,7 @@
                             </div>
                             <button type="submit"
                                 class="bg-indigo-600 text-white px-8 py-2.5 rounded-lg font-medium hover:bg-indigo-700 transition-colors">
-                                Stripeで購入する
+                                購入する
                             </button>
                         </div>
                     </form>
