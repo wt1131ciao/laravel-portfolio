@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git commit -m ' *)",
+      "Bash(curl -s -o /dev/null -w 'GET / -> HTTP %{http_code}\\\\n' https://laravel-portfolio-1002579734610.asia-northeast1.run.app/)",
+      "Bash(curl -s -o /dev/null -w 'GET /login -> HTTP %{http_code}\\\\n' https://laravel-portfolio-1002579734610.asia-northeast1.run.app/login)",
+      "Bash(curl -s -o /dev/null -w 'GET /up -> HTTP %{http_code}\\\\n' https://laravel-portfolio-1002579734610.asia-northeast1.run.app/up)",
+      "Bash(curl -s https://laravel-portfolio-1002579734610.asia-northeast1.run.app/)",
+      "Bash(docker exec laravel_app php artisan tinker '--execute= *)",
+      "Bash(docker compose *)",
+      "Bash(gcloud auth *)",
+      "Bash(where gcloud *)",
+      "Bash(gcloud --version)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://laravel-portfolio-1002579734610.asia-northeast1.run.app/up)"
+    ]
+  }
+}
